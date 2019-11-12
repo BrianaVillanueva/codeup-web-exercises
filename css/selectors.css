@@ -14,7 +14,7 @@
 
  #container h1.fancy-header {
     color: goldenrod;
-    text-decoration: underline;
+     text-decoration: underline ;
 }
 
 /* selector for all "em" elements */
@@ -33,16 +33,16 @@ em {
     float:right;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 
-
-h1 {
+h1, h2, {
     text-align: center;
 }
 
 
-h1,h2 {
-    color: black;
-    font-family: cornerstone;
+h1, h2 {
+    color: darkgoldenrod;
+    font-family: 'Lobster', cursive;
     text-decoration: underline;
 }
 
