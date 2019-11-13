@@ -15,9 +15,29 @@ body {
     width: 100%;
     border: 3px solid goldenrod;
     display: flex;
-}
+    flex-direction: row;
+    height: 10em;
+    }
+
 .flex-item {
     background: #BFD45D;
     border: 2px solid #F9EFD6;
     padding: 1em;
+}
+
+.first-item {
+    /*    font-size: 15px;*/
+    /*order: 2;*/
+    /*align-self: flex-start;*/
+}
+
+.second-item {
+    /*    font-size: 30px;*/
+    /*order: 1;*/
+    /*align-self: center;*/
+}
+
+.third-item {
+    /*    font-size: 45px;*/
+    /*align-self: flex-end;*/
 }
