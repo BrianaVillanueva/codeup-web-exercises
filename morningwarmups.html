@@ -58,19 +58,31 @@ console.log(addFour(17,100,2,23));
     function firstItem(inputArray){
         return inputArray[0]
 
-        console.log(firstItem(["dog", "cat", "bird", "fish"]));
+        // console.log(firstItem(["dog", "cat", "bird", "fish"]));
     }
 
     //Write a js function called arrayLength that takes in an
     // array and returns the length of that array
 
     var arrayLength = function (inputArray) {
-        return inputArray. length;
+        return inputArray.length;
+
+        // console.log(arrayLength(["dog", "cat", "bird", "fish"])) //output: 4
+        // console.log(arrayLength(["apple", "mango", "grapes", "kiwi", "coconut", "dragonfruit"]));
     }
-    console.log(arrayLength (["dog", "cat", "bird", "fish"])) //output: 4
-    console.log(arrayLength(["apple", "mango", "grapes", "kiwi", "coconut", "dragonfruit"]));
+
+
+
+    //Write a js function called lastItem that takes in an array and returns the lastItem.
+
+
+    var lastItem = function (inputArray) {
+        return inputArray[inputArray.length-1];
+    }
+
+            console.log(lastItem(["dog", "cat", "bird", "fish"]));
+
 
 </script>
-
 </body>
 </html>
