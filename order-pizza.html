@@ -8,179 +8,219 @@
 
     <title>Document</title>
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-    #main-container {
-        background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("images/pizza.png");
-        background-size: cover;
-        color: black;
-    }
-    .embed-responsive .card-img-top {
-        object-fit: cover;
-    }
+        #main-container {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("images/pizza.png");
+            background-size: cover;
+            color: black;
+        }
+
+        .embed-responsive .card-img-top {
+            object-fit: cover;
+        }
 
     </style>
 </head>
 
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Pizza world</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Pizza world</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-0 d-flex">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Online order<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Menu</a>
-                </li>
-                <li>
-            </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Zip Code" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search stores near you!</button>
-                    </form>
-            <a class="nav-link ml-auto" href="#">Sign up</a>
-        </div>
-    </nav>
-
-
-    <!--JUMBO START-->
-    <div class="container">
-    <div class="jumbotron jumbotron-fluid d-sm-none d-md-block" id = "main-container">
-            <h1 class="display-4">Welcome to Pizza World!</h1>
-            <!--            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>-->
-        </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-0 d-flex">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Online order<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Zip Code" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search stores near you!</button>
+        </form>
+        <a class="nav-link ml-auto" href="#">Sign up</a>
     </div>
+</nav>
+
+
+<!--JUMBO START-->
+<div class="container">
+    <div class="jumbotron jumbotron-fluid d-sm-none d-md-block" id="main-container">
+        <h1 class="display-4">Welcome to Pizza World!</h1>
+        <!--            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>-->
     </div>
-    <!--JUMBO END-->
+</div>
+<!--JUMBO END-->
+<div class="container">
     <!--START NAV-->
     <h2>Build your own pizza!</h2>
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active" id="crust-tab" data-toggle="tab" href="#crust" role="tab" aria-controls="size-and-crust" aria-selected="true"><span class="badge badge-pill badge-secondary">1</span> Size and crust</a>
+            <a class="nav-link active" id="crust-tab" data-toggle="tab" href="#crust" role="tab"
+               aria-controls="size-and-crust" aria-selected="true"><span
+                    class="badge badge-pill badge-secondary">1</span> Size and crust</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="cheese-tab" data-toggle="tab" href="#cheese" role="tab" aria-controls="cheese-and-sauce" aria-selected="false"><span class="badge badge-pill badge-secondary">2</span> Cheese and sauce</a>
+            <a class="nav-link" id="cheese-tab" data-toggle="tab" href="#cheese" role="tab"
+               aria-controls="cheese-and-sauce" aria-selected="false"><span
+                    class="badge badge-pill badge-secondary">2</span> Cheese and sauce</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="toppings-tab" data-toggle="tab" href="#toppings" role="tab" aria-controls="toppings" aria-selected="false"><span class="badge badge-pill badge-secondary">3</span> Toppings</a>
+            <a class="nav-link" id="toppings-tab" data-toggle="tab" href="#toppings" role="tab" aria-controls="toppings"
+               aria-selected="false"><span class="badge badge-pill badge-secondary">3</span> Toppings</a>
         </li>
     </ul>
     <!--END NAV-->
 
 
-
-
-
-<!--TAB CONTENT START-->
+    <!--TAB CONTENT START-->
     <div class="tab-content" id="myTabContent">
         <!--TAB ONE START-->
         <div class="tab-pane fade show active" id="crust" role="tabpanel" aria-labelledby="crust-tab">
             <!--HAND TOSSED CARD START-->
 
 
-
-
-
-            <div class="card text-center">
+            <div class="card">
                 <div class="card-header">
-                    Featured
+                    Hand Tossed
                 </div>
                 <div class="card-body">
 
-
-
-
-
-
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="card">
+                        <div class="card-header">
+                            Hand tossed
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item">Garlic seasoned crust with a rich, buttery taste.</div>
+                            <div class="container">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="small"
+                                           value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Small (10")
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="container">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="medium"
+                                       value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Medium (12")
+                                </label>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--HAND TOSSED CARD END-->
+                </div>
+                    <!--CRISPY THIN CARD START-->
+                    <div class="card mt-3">
+                        <div class="card-header">
+                            Crispy Thin
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item">Thin enough for optimum crispy to crunchy ratio.</div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="medium2"
+                                       value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Medium (12")
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="large"
+                                       value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Large (14")
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                <div class="card-footer text-right">
+                    <a href="#" class="btn btn-primary">Next Step</a>
+                </div>
+                    <!--CRISPY THIN CARD END-->
+                </div>
+                <!--TAB ONE END-->
+            </div>
+            <!--TAB TWO START-->
+            <div class="tab-pane fade" id="cheese" role="tabpanel" aria-labelledby="cheese-tab">
+                <div class="card">
+                    <div class="card-header">
+                        Choose Cheese and Sauce
+                    </div>
+                    <div class="card-body">
+                        <div class="card">
+                            <div class="card-header">
+                                Cheese
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="card-footer text-right">
-                    2 days ago
+                    <a href="#" class="btn btn-primary">Next Step</a>
                 </div>
             </div>
+            <!--TAB TWO END-->
 
-
-
-
-
-            <div class="card" style="width: 18rem;">
-                <div class="card-header">
-                    Hand tossed
+            <!--TAB THREE START-->
+            <div class="tab-pane fade" id="toppings" role="tabpanel" aria-labelledby="toppings-tab">
+                <!--CHOOSE MEATS CARD START-->
+                <div class="card">
+                    <div class="card-header">
+                        Choose Meats
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Beef</li>
+                        <li class="list-group-item">Ham</li>
+                        <li class="list-group-item">Philly Steak</li>
+                        <li class="list-group-item">Bacon</li>
+                    </ul>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Garlic seasoned crust with a rich, buttery taste.</li>
-                    <li class="list-group-item">Small (10")</li>
-                    <li class="list-group-item">Medium (12")</li>
-                </ul>
-            </div>
-            <!--HAND TOSSED CARD END-->
-            <!--CRISPY THIN CARD START-->
-            <div class="card" style="width: 18rem;">
-                <div class="card-header">
-                    Crispy Thin
+                <!--CHOOSE MEATS CARD END-->
+                <!--CHOOSE NON MEATS START-->
+                <div class="card">
+                    <div class="card-header">
+                        Choose Non-Meats
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Green Peppers</li>
+                        <li class="list-group-item">Mushrooms</li>
+                        <li class="list-group-item">Onions</li>
+                        <li class="list-group-item">Jalepeno Peppers</li>
+                    </ul>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Thin enough for optimum crispy to cruncy ratio.</li>
-                    <li class="list-group-item">Medium (12")</li>
-                    <li class="list-group-item">Large (14")</li>
-                </ul>
+                <div class="card-footer text-right">
+                    <a href="#" class="btn btn-primary">Next Step</a>
+                </div>
+                <!--CHOOSE NON MEATS END-->
             </div>
-            <!--CRISPY THIN CARD END-->
+            <!--TAB THREE END-->
+
+
         </div>
-        <!--TAB ONE END-->
-
-        <!--TAB TWO START-->
-        <div class="tab-pane fade" id="cheese" role="tabpanel" aria-labelledby="cheese-tab">
-        </div>
-        <!--TAB TWO END-->
-
-        <!--TAB THREE START-->
-        <div class="tab-pane fade" id="toppings" role="tabpanel" aria-labelledby="toppings-tab">
-        <!--CHOOSE MEATS CARD START-->
-            <div class="card" style="width: 18rem;">
-                <div class="card-header">
-                    Choose Meats
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Beef</li>
-                    <li class="list-group-item">Ham</li>
-                    <li class="list-group-item">Philly Steak</li>
-                    <li class="list-group-item">Bacon</li>
-                </ul>
-            </div>
-        <!--CHOOSE MEATS CARD END-->
-        <!--CHOOSE NON MEATS START-->
-            <div class="card" style="width: 18rem;">
-                <div class="card-header">
-                    Choose Non-Meats
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Green Peppers</li>
-                    <li class="list-group-item">Mushrooms</li>
-                    <li class="list-group-item">Onions</li>
-                    <li class="list-group-item">Jalepeno Peppers</li>
-                </ul>
-            </div>
-        <!--CHOOSE NON MEATS END-->
-        </div>
-        <!--TAB THREE END-->
-        </div>
+    </div>
 
 
-
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
