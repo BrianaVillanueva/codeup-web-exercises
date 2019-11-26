@@ -127,10 +127,24 @@ console.log(addFour(17,100,2,23));
 
 
 
-        console.log(greaterThanTen(12));  //output true
-        console.log(greaterThanTen(5));  //output false
+        // console.log(greaterThanTen(12));  //output true
+        // console.log(greaterThanTen(5));  //output false
 
 
+//Write a js function called youMayEnter that
+// accepts a number that is an age. If the age
+// is 13 or greater, return "You may enter!" else,
+// return "Sorry, you need a parent or guardian to enter."
+
+    function youMayEnter (age) {
+        if(age >= 13) {
+            return "You may enter!";
+        } else {
+            return "Sorry, you need a parent or guardian"
+            }
+    }
+
+    console.log(youMayEnter(25)); //output should be you may enter
 
 
 
