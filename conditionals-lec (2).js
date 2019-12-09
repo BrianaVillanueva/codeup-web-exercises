@@ -53,7 +53,8 @@ if(numberOfLives === 0) {
     alert("Sorry, game over!");
 }
 
-//TODO: Write an if statement that alerts "It's snowing!" if weather is equal to "snowing"
+//TODO: Write an if statement that alerts "It's snowing!"
+// if weather is equal to "snowing"
 
 var Weather = "snowing"; //write variables first
 
@@ -62,7 +63,8 @@ if(weather === "snowing") {
 }
 
 
-//TODO: Write an if statement that alerts true if numberInput is greater than but not equal to 10
+//TODO: Write an if statement that alerts true if numberInput
+// is greater than but not equal to 10
 
 var numberInput = 20; //random number
 if(numberInput > 10) {
@@ -86,7 +88,8 @@ if(numberInput > 10) {
     
 
 // =============== IF / ELSE STATEMENT EXAMPLES ================
-//TODO Together: Show a specific navbar if user is admin, else show a different navbar
+//TODO Together: Show a specific navbar if user is admin,
+// else show a different navbar
 
 var isAdmin = true;
 
@@ -98,7 +101,8 @@ if(isAdmin) {
     alert("User is a regular user ");
 }
 
-//TODO Together: Write an if statement that alerts "It's raining" if isRainy is true,
+//TODO Together: Write an if statement that alerts
+// "It's raining" if isRainy is true,
 // else return "have a nice day!"
 
 var isRainy = false; //false can be true or false to test output
@@ -109,7 +113,8 @@ if(isRainy) {
     alert("Have a nice day!");
 }
 
-//TODO: Write an if statement that alerts "Sorry, game over" if numberOfLives is 0,
+//TODO: Write an if statement that alerts "Sorry, game over"
+// if numberOfLives is 0,
 // else alert "Next Level!"
 
 var numberOfLives = 5;
@@ -259,14 +264,29 @@ console.log(checkWeather(weather: "sunny"));
 // informing the user what to do when approaching that color light at an intersection.
 
 
+function checkTrafficLight(trafficLight) {
 
+if(trafficLight === "green") {
+        return "Keep going!";
+} else if (trafficLight === "yellow") {
+        return "Slow down";
+} else if(trafficLight === "red") {
+        return "Stop!";
+} else {
+        return "Proceed with caution";
+}
 
-
-
+console.log(checkTrafficLight(trafficLight: "green"));
 
 
 // ================ NESTED STATEMENTS ===============
-//TODO Together: If user is under 15, they are not eligible for a learners permit, else they are. If they are eligible, check age. If they are 15 they are eligible for a learners permit, if they are 16 or older and have a permit, they are eligible for license, if they are 16 or older and do not have a permit, they are not eligble for a license.
+//TODO Together: If user is under 15, they are not
+// eligible for a learners permit, else they are.
+// If they are eligible, check age. If they are
+// 15 they are eligible for a learners permit, if
+// they are 16 or older and have a permit, they are
+// eligible for license, if they are 16 or older and
+// do not have a permit, they are not eligble for a license.
 
 
 
@@ -421,7 +441,9 @@ function checkTrafficLight(trafficLight) {
 
 
 // ================ REVERSE ENGINEERING =================
-// Visit each of these links, outline the steps required to achieve each of these demonstrations. You can write code or just write the logic steps that would achieve each output
+// Visit each of these links, outline the steps required
+// to achieve each of these demonstrations. You can write
+// code or just write the logic steps that would achieve each output
  // these are in MDN docs - conditionals for further reading
 
 // 1) https://mdn.github.io/learning-area/javascript/building-blocks/allowance-updater.html
