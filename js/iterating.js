@@ -7,7 +7,15 @@
      * 'names'.
      */
 
+    var names = []; //here: pets is an empty array//
+    names[0] = "Bob";
+    names[1] = "Ben";
+    names[2] = "Bill";
+    names[3] = "Bruce";
 
+    for (var i = 0; i < names.length; i++){
+        console.log(names[i]);
+    }
 
 
 
@@ -17,17 +25,32 @@
      * array.
      */
 
+
+    var names = []; //here: pets is an empty array//
+    names[0] = "Bob";
+    names[1] = "Ben";
+    names[2] = "Bill";
+    names[3] = "Bruce";
+
+    for (var i = 0; i < names.length; i++){
+        console.log(names[i]);
+    }
+
     /**
      * TODO:
      * Create log statements that will print each of the names individually by
      * accessing each element's index.
      */
 
+
+
     /**
      * TODO:
      * Write some code that uses a for loop to log every item in the names
      * array.
      */
+
+
 
     /**
      * TODO:
