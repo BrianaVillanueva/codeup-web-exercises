@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)file:///Users/briana/Downloads/css-grid-layout-2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Grid Layout 6</title>
+<style>
+    body {
+        display: grid;
+        grid-template-rows: 30% 1fr 15% 15%;
+        grid-template-columns: 30% 1fr;
+        height: 100vh;
+        margin: 10px;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+
+    }
+
+    body {
+        grid-template-areas:
+                "header header header"
+                "nav article article"
+                "nav ads ads"
+                "footer footer footer" ;
+    }
+
+    .pageheader {
+        grid-area: header;
+        background: #9bcf3a;
+        padding: 1.2em;
+    }
+
+    .mainArticle {
+        grid-area: article;
+        background: #9bcf3a;
+        padding: 1.2em;
+    }
+
+    .mainNav {
+        grid-area: nav;
+        background: #9bcf3a;
+        padding: 1.2em;
+    }
+
+    .siteAds {
+        grid-area: ads;
+        background: #9bcf3a;
+        padding: 1.2em;
+    }
+
+    .pagefooter {
+        grid-area: footer;
+        background: #9bcf3a;
+        padding: 1.2em;
+    }
+
+</style></head>
+
+
+
+<body>
+    <header class="pageheader">Header</header>
+    <article class="mainArticle">Article</article>
+    <nav class="mainNav">Nav</nav>
+    <ads class="siteAds">Ads</ads>
+    <footer class="pagefooter">Footer</footer>
+
+</body></html>
