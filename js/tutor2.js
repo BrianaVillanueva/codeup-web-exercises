@@ -135,6 +135,8 @@ function reverseUpperCaseString(x) {
     }
 }
 
+
+
 //
 // console.log(reverseUpperCaseString(true)); // false
 // console.log(reverseUpperCaseString(18)); // false
@@ -167,3 +169,32 @@ function getLowestNumber (x, y, z) {
 // console.log(getLowestNumber("cat", "dog", "hippopotamus")); // false
 // console.log(getLowestNumber(1, "otter", 30)); // false
 // console.log(getLowestNumber(-53, 72, 7)); // -53
+
+
+
+
+// Example of Palindrome
+
+function palindrome(text) {
+// Split, reverse and join string to get reversed text
+    var reversedText  = text.toLowerCase()
+        .split('').reverse().join('');
+
+
+    return text === reversedText;
+
+}
+console.log(palindrome("dog"));
+
+// second example
+
+function reverseUpperCaseString(input) {
+    if(!isNaN(parseFloat(input))) {
+        return false;
+    }else if (typeof input !== "string") {
+        return false;
+    }else{
+        var input2 = (input.split("").reverse().join("")).toUpperCase();
+        return  input2 === input.toUpperCase();
+    }
+}

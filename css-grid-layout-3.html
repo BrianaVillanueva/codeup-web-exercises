@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)file:///Users/briana/Downloads/css-grid-layout-3.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Grid Layout 11</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-rows: 23% 1fr 1fr 1fr 1fr;
+            grid-template-columns: 24.5% 1fr 1fr 1fr;
+            height: 100vh;
+            margin: 0;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+
+        }
+
+        body {
+            grid-template-areas:
+                    "one one one one"
+                    "two three four four"
+                    "two five five six"
+                    "two seven eight nine"
+                    "two ten ten ten" ;
+        }
+
+        .first {
+            grid-area: one;
+            background: #fcda4b;
+            padding: 10px;
+            color: white;
+            font-size: 4vw;
+        }
+
+        .second {
+            grid-area: two;
+            background: #fcda4b;
+            padding: 10px;
+            color: white;
+            font-size: 4vw;
+        }
+
+        .third {
+            grid-area: three;
+            background: #fcda4b;
+            padding: 10px;
+            color: white;
+            font-size: 4vw;
+        }
+
+        .fourth {
+            grid-area: four;
+            background: #fcda4b;
+            padding: 10px;
+            color: white;
+            font-size: 4vw;
+        }
+
+        .fifth {
+            grid-area: five;
+            background: #fcda4b;
+            padding: 10px;
+            color: white;
+            font-size: 4vw;
+        }
+
+        .sixth {
+            grid-area: six;
+            background: #fcda4b;
+            padding: 10px;
+            color: white;
+            font-size: 4vw;
+        }
+
+        .seventh {
+            grid-area: seven;
+            background: #fcda4b;
+            padding: 10px;
+            color: white;
+            font-size: 4vw;
+        }
+
+        .eight {
+            grid-area: eight;
+            background: #fcda4b;
+            padding: 10px;
+            color: white;
+            font-size: 4vw;
+        }
+
+        .ninth {
+            grid-area: nine;
+            background: #fcda4b;
+            padding: 10px;
+            color: white;
+            font-size: 4vw;
+        }
+
+        .tenth {
+            grid-area: ten;
+            background: #fcda4b;
+            padding: 10px;
+            color: white;
+            font-size: 4vw;
+        }
+
+    </style></head>
+
+
+
+<body>
+<one class="first">1</one>
+<two class="second">2</two>
+<three class="third">3</three>
+<four class="fourth">4</four>
+<five class="fifth">5</five>
+<six class="sixth">6</six>
+<seven class="seventh">7</seven>
+<eight class="eight">8</eight>
+<nine class="ninth">9</nine>
+<ten class="tenth">10</ten>
+
+</body></html>
