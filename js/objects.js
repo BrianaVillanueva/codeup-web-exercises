@@ -85,6 +85,19 @@
      * > console.log(books[0].author.lastName) // "Adams"
      */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -121,4 +134,27 @@
      *   `showBookInfo` function.
      */
 
+    var createBook = function (title, authorFirstName, authorLastName) { // input to our function
+        var book = {};
+        book.title = title;
+        book.author = {};
+        book.author.firstName = author.firstName;
+        book.author.LirstName = author.LastName;
+        return book;
+    }
+
+    book.push(createBook("Leviathan", "Scott", "Westfield"))// add a new book to the books array end
+
+   var showBookInfo = function(book) {
+       console.log("Book # " +(i+1))
+       console.log("Title: "+book.title)
+       console.log("Author: "+ Book.author.firstName + " " + book.author.lastName)
+       console.log("---")
+   }
+    books.forEach(function (book, i) {
+        // console.log("Book # " +(i+1))
+        // console.log("Title: "+book.title)
+        // console.log("Author: "+ Book.author.firstName + " " + book.author.lastName)
+        // console.log("---")
+    });
 })();

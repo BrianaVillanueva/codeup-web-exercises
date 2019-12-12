@@ -1,4 +1,5 @@
 "use strict";
+
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
@@ -14,82 +15,103 @@
  *
  * Can you refactor your code to use functions?
  */
+
 // ================== Version without functions
+
 // var willContinue = confirm("Will you enter a number?");
 //
 //
-// if (willContinue) {
-//
-//     // prompt the user for a number
-//     var userInput = prompt("What number would you like to enter");
-//
+if (willContinue) {
+
+    // prompt the user for a number
+    var userInput = prompt("What number would you like to enter");
+
 //
 //     var isNum = !isNaN(userInput);
 //
-//     if (isNum) {
-//
-//         var userNum = parseFloat(userInput);
-//
-//         // alert the following...
-//
-//         // whether the number is even or odd
-//
-//         var isEven = userInput % 2 === 0;
-//         var isEvenMessage = (isEven) ? "Number is even" : "Number is odd";
-//         alert(isEvenMessage);
+    if (isNum) {
+
+        var userNum = parseFloat(userInput);
+
+        // alert the following...
+
+        // whether the number is even or odd
+
+        var isEven = userInput % 2 === 0;
+        var isEvenMessage = (isEven) ? "Number is even" : "Number is odd";
+        alert(isEvenMessage);
 //
 //         // what the number plus 100 is
 //
-//         alert(userNum + 100);
+        alert(userNum + 100);
 //
 //         // if the number is negative or positive
 //
-//         var isPos = Math.sign(userNum) === 1;
-//         var isPosMessage = (isPos) ? "Number is positive" : "Number is negative";
-//         alert(isPosMessage);
-//
-//
-//     } else {
-//
-//     // otherwise
-//         // if what the user enters is not a number, use an alert to tell them that, and
-//         // * do *not* display any of the above information.
-//         alert("That's not a number!");
+        var isPos = Math.sign(userNum) === 1;
+        var isPosMessage = (isPos) ? "Number is positive" : "Number is negative";
+        alert(isPosMessage);
+
+
+    } else {
+
+    // otherwise
+        // if what the user enters is not a number, use an alert to tell them that, and
+        // * do *not* display any of the above information.
+        alert("That's not a number!");
 //     }
 //
 //
 //
 // }
+
+
 // ================== Version with functions
+
 function isNum(input) {
     return !isNaN(input)
 }
+
 function isEven(num) {
     return num % 2 === 0;
 }
+
 function outputEvenOddMessage(result) {
     return (result) ? "Number is even" : "Number is odd";
 }
+
 function add100(num) {
     return num + 100;
 }
+
 function isPos(num) {
     return Math.sign(num) === 1;
 }
+
 function outputPosNegMessage(result) {
     return (result) ? "Number is positive" : "Number is negative";
 }
+
 function getNumDetails(number) {
     var userNum = parseFloat(number);
+
     // alert the following...
+
     // whether the number is even or odd
+
     var isEvenResult = isEven(userNum);
+
     alert(outputEvenOddMessage(isEvenResult));
+
     // what the number plus 100 is
+
     alert(add100(userNum));
+
     // if the number is negative or positive
+
     alert(outputPosNegMessage(isPos(userNum)));
+
 }
+
 function runProgram() {
     if (willContinue) {
         // prompt the user for a number
@@ -104,9 +126,17 @@ function runProgram() {
         }
     }
 }
+
 var willContinue = confirm("Will you enter a number?");
+
 runProgram();
+
+
+
+
+
 /* ########################################################################## */
+
 /**
  * TODO:
  * Create a function named `analyzeColor` that accepts a string that is a color
@@ -124,6 +154,8 @@ runProgram();
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
+
+
 function analyzeColor(color) {
     var colorMsg = "";
     if (color === "blue") {
@@ -137,9 +169,11 @@ function analyzeColor(color) {
     }
     return colorMsg;
 }
+
 console.log(analyzeColor("blue"));
 console.log(analyzeColor("red"));
 console.log(analyzeColor("yellow"));
+
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
@@ -152,12 +186,15 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Pass the `randomColor` variable to your function and console.log the results.
  * You should see a different message everytime you refresh the page
  */
+
 console.log(randomColor);
 console.log(analyzeColor(randomColor));
+
 /**
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
+
 function analyzeColorSwitch(color) {
     var colorMsg = "";
     switch (color) {
@@ -176,15 +213,19 @@ function analyzeColorSwitch(color) {
     }
     return colorMsg;
 }
+
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
+
 var userColor = prompt("Pick a color");
 alert(analyzeColorSwitch(userColor));
+
 /* ########################################################################## */
+
 /**
  * TODO:
  * Suppose there's a promotion in Walmart, each customer is given a randomly
@@ -204,6 +245,7 @@ alert(analyzeColorSwitch(userColor));
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
+
 function calculateTotal(luckyNum, total) {
     var discountRate = 0;
     switch (luckyNum) {
@@ -225,8 +267,10 @@ function calculateTotal(luckyNum, total) {
         case 5:
             discountRate = 1;
     }
+
     return total - (total * discountRate);
 }
+
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 6.
@@ -237,5 +281,6 @@ function calculateTotal(luckyNum, total) {
 // Generate a random number between 0 and 6
 var luckyNumber = Math.floor(Math.random() * 6);
 var totalBill = prompt("What is your total bill?");
+
 console.log(luckyNumber);
 alert("You total bill is: $" + calculateTotal(luckyNumber, totalBill).toFixed(2));
