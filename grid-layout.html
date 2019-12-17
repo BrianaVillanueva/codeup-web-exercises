@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pod Layout Exercise</title>
+    <!--    <link rel="stylesheet" href="css/css-grid-layout-1.css">-->
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        body    {
+            margin: 0;
+        }
+
+        main {
+            display: grid;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-columns: repeat(5, 1fr);
+            height: 100vh;
+            margin: 0;
+            width: 100vw;
+            grid-gap: 2px;
+        }
+
+
+
+        #orange {
+            background-color: #FF5733;
+            /*grid-area: 1 / 1 / 2/ 6;*/
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+
+        #pink {
+            background-color: #961568;
+            /*grid-area: 2 / 1/ 7 / 2 ;*/
+            grid-row-start: 2;
+            grid-row-end: 7;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        #blue {
+            background-color: #1E4285;
+            /*grid-area: 2 / 2 / 6 / 5;*/
+            grid-row-start: 2;
+            grid-row-end: 6;
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+
+        #yellow {
+            background-color: #B5A01E;
+            /*grid-area: 2 / 5 / 6 / 6;*/
+            grid-row-start: 2;
+            grid-row-end: 6;
+            grid-column-start: 5;
+            grid-column-end: 6;
+        }
+
+        #green {
+            background-color: #3B6008;
+            /*grid-area: 6 / 2 / 7 / 6;*/
+            grid-row-start: 6;
+            grid-row-end: 7;
+            grid-column-start: 2;
+            grid-column-end: 6;
+        }
+
+    </style>
+
+
+
+
+</head>
+
+
+<body>
+<main>
+    <div id="orange">Orange</div>
+    <div id="pink">Pink</div>
+    <div id="blue">Blue</div>
+    <div id="yellow">Yellow</div>
+    <div id="green">Green</div>
+</main>
+</body>
