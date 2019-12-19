@@ -36,7 +36,7 @@ var markerOptions = {       //added this line to change the marker color//had to
 
 var marker = new mapboxgl.Marker(markerOptions)
     .setLngLat([-98.483700, 29.435360])
-    .addTo(map)
+    .addTo(map);
 
 // TODO TOGETHER: Change the color of the marker
 //did above//
@@ -95,33 +95,42 @@ marker.setPopup(popup);
 // TODO: Reverse geocode coordinates of your choice using the reverse geocode method
 
 
-var restaurantList = [
-    {
-        name: "paramour",
-
-
-    },
-    {
-        name: "sanchos",
-
-    },
-    {
-        name:"burgerteca",
-
-    }
-];
-
-function getRestaurant(restaurantArray){
-       var bucket = [];
-
-       restaurantArray.forEach(function(restaurant){
-           if(restaurant.isGold === true){
-               bucket.push(restaurant);
-           }
-
-       })
-       return bucket;
-   }
-
-console.log(getRestaurant(restaurantList));
-
+//
+// var fave1 = [
+//     {
+//         name: "paramour",
+//         coordinates: [-98.483700, 29.435360],
+//         phone: []
+//
+//
+//     }
+//
+// var fave2 = {
+//         name: "sanchos",
+//         coordinates: [],
+//         phone: []
+//
+//     }
+//
+// var fave3 = {
+//         name:"burgerteca",
+//         coordinates: [],
+//         phone: []
+//
+//     }
+// ];
+//
+// function getRestaurant(restaurantArray){
+//        var bucket = [];
+//
+//        restaurantArray.forEach(function(restaurant){
+//            if(restaurant.isGood === true){
+//                bucket.push(restaurant);
+//            }
+//
+//        })
+//        return bucket;
+//    }
+//
+// console.log(getRestaurant(restaurantList));
+//
