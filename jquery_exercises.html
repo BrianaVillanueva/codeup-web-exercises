@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Exercises</title>
+    <style>
+    .purple {
+        background-color: mediumpurple;
+    }
+    </style>
+</head>
+
+<body>
+<h1 id="main">Happy New Year!</h1>
+<p>New year resolutions!</p>
+<ul id="resolutions">
+    <li class="first">Maintain gym schedule</li>
+    <li class="second">Code more fluently</li>
+    <li class="third">Get ahead of the game</li>
+</ul>
+
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script>
+
+    $('#main').click(function () {
+        $(this).css('background-color', '#FF0');
+    });
+
+
+
+    $('p').dblclick(function() {
+        $(this).css('font-size', '18px');
+    });
+
+
+
+    $('li')
+        .mouseenter(function() {
+            $('li').css('color', 'blue');
+        })
+        .mouseout(function() {
+            $('li').css('color', 'black');
+        });
+
+
+</script>
+</body>
+</html>
