@@ -29,13 +29,9 @@
         $(this).css('background-color', '#FF0');
     });
 
-
-
     $('p').dblclick(function() {
         $(this).css('font-size', '18px');
     });
-
-
 
     $('li')
         .mouseenter(function() {
@@ -44,6 +40,22 @@
         .mouseout(function() {
             $('li').css('color', 'black');
         });
+
+    // this window.onload function waits until images have fully downloaded
+    // to begin manipulating DOM objects. But you usually don't need to wait
+    // on the images to begin w DOM objects.
+    window.onload = function() {
+        alert('The page has finished loading!');
+    };
+
+    //you can use jQuery to select the document object and add an event listener
+    //called ready. this event listener will fire as soon as the DOM is ready.
+    //While using document ready is common if we put our JS at the bottom of
+    // our document, it will already be loaded by the time the JS is loaded.
+    //Using document ready will ensure the DOM is loaded before running.
+    $(document).ready(function() {
+        alert( 'The DOM has finished loading!' );
+    });
 
 
 </script>
