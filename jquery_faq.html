@@ -91,7 +91,9 @@
     });
 
     $("li").click(function() {
-        $(this).each().parent().children().css("color", "blue");
+        $(this).parent().children().first().each(function () {
+           $(this).css("color", "blue");
+        });
     });
 
 
