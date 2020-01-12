@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="page">
+    <h2 onclick = "this.innerHTML = 'OOpps'">Click on this text!</h2>
+    <hl id="header">List</hl> <h2>Buy groceries</h2> <ul>
+    <li id="one" class="hot"><em>fresh</em> figs</li> <li id="two" class="hot">pine nuts</li>
+    <li id="three" class="hot">honey</li>
+    <li id="four">balsamic vinegar</li>
+</ul>
+<input onclick="change()" type="button" value="Open Curtain" id="myButton1">
+</div>
+<script>
+
+//change button text on click//
+function change() {
+    document.getElementById("myButton1").value="Close Curtain";
+}
+//changing four by refreshing//
+// var element = document.getElementById("four");
+//     element.innerHTML = "New Heading";
+
+//changing four by clicking//
+document.getElementById("myButton1").onclick = function(){
+    document.getElementById("three").innerHTML = "Hey There"
+}
+
+//
+function doSomething(){
+    let one = document.getElementById("three").setAttribute("style)
+
+}
+
+</script>
+</body>
+</html>
+<!--<script>-->
+<!--    function change()-->
+<!--    {-->
+<!--        document.getElementById("myButton1").value="Close Curtain";-->
+<!--    }-->
+<!--    var  element = document.getElementById("four");-->
+<!--    element.innerHTML = "New Heading";-->
+<!--    var myElement = document.getElementById("three");-->
+<!--    myElement.notificationclick.innerHTML = "NewText";-->
+<!--    document.getElementById("page").style.transitionDelay = "2000s"-->
+<!--    let one = document.getElementById('one');-->
+<!--    }-->
+<!--    ///changing background color using dom-->
+<!--    document.body.style.backgroundColor = "yellow";-->
+<!--    document.getElementById('page').setAttribute('style', 'visibility: hidden');-->
+<!--    setTimeout(function () {-->
+<!--        document.getElementById('page').setAttribute('style', 'visibility: visible');-->
+<!--        console.log('ready')-->
+<!--    }, 5000);-->
+<!--    function doSomething() {-->
+<!--        let one = document.getElementById('one');-->
+<!--        console.log(one.innerHTML);-->
+<!--        //delay page load; change heading-->
+<!--        document.getElementById('page').setAttribute('style', 'visibility: hidden');-->
+<!--        setTimeout(function () {-->
+<!--            document.getElementById('page').setAttribute('style', 'visibility: visible');-->
+<!--            console.log('ready')-->
+<!--        }, 5000);-->
+<!--    }-->
+<!--</script>-->
