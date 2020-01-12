@@ -14,16 +14,20 @@
 </head>
 
 <body>
-<h1 id="main">Happy New Year!</h1>
+<h1 id ="main">Happy New Year!</h1>
 <p>New year resolutions!</p>
-<ul id="resolutions">
-    <li class="first">Maintain gym schedule</li>
-    <li class="second">Code more fluently</li>
-    <li class="third">Get ahead of the game</li>
+<ul id ="resolutions">
+    <li class ="first">Maintain gym schedule</li>
+    <li class ="second">Code more fluently</li>
+    <li class ="third">Get ahead of the game</li>
 </ul>
 
 <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
 <script>
+
+    //Add some js that uses jQuery to set an alert that'll tell you the contents of the h1 element.//
+    var contents = $('#main').html(); //create a variable that will grab the .html of the h1 element.//
+    alert(contents); //now set an alert to the var contents to receive your result.
 
     $('#main').click(function () {
         $(this).css('background-color', '#FF0');
@@ -44,19 +48,19 @@
     // this window.onload function waits until images have fully downloaded
     // to begin manipulating DOM objects. But you usually don't need to wait
     // on the images to begin w DOM objects.
-    window.onload = function() {
-        alert('The page has finished loading!');
-    };
+   window.onload = function () {
+       alert('The page is finished loading!');
+   }
 
+    //Here is the same way to do the same thing but this one will load first.
     //you can use jQuery to select the document object and add an event listener
     //called ready. this event listener will fire as soon as the DOM is ready.
     //While using document ready is common if we put our JS at the bottom of
     // our document, it will already be loaded by the time the JS is loaded.
     //Using document ready will ensure the DOM is loaded before running.
-    $(document).ready(function() {
-        alert( 'The DOM has finished loading!' );
-    });
-
+    $(document).ready(function(){
+        alert('The DOM is finished loading!');
+    })
 
 </script>
 </body>
