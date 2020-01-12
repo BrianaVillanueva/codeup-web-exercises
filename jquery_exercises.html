@@ -22,11 +22,25 @@
     <li class ="third">Get ahead of the game</li>
 </ul>
 
+<h1>Example Page</h1>
+<div class="important">
+    <h3>NOTICE</h3>
+    <p>This is an important message!</p>
+</div>
+<div class="not-important">
+    <h2>Lorem Ipsum</h2>
+    <p>
+        Lorem ipsum dolor sit amet, incididunt ut <span class="important">labore et dolore magna aliqua.</span>, quis ut aliquip ex ea commodo.
+    </p>
+</div>
+<p class="important">This is also an important message.</p>
+
+
+
 <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
 <script>
-
     //Add some js that uses jQuery to set an alert that'll tell you the contents of the h1 element.//
-    var contents = $('#main').html(); //create a variable that will grab the .html of the h1 element.//
+    var contents = $('#main').html() + (' (This is alerting the inner html of the h1)'); //create a variable that will grab the .html of the h1 element.//
     alert(contents); //now set an alert to the var contents to receive your result.
 
     $('#main').click(function () {
