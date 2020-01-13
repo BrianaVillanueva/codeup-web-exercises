@@ -14,6 +14,8 @@
 </head>
 
 <body>
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+
 <h1 id ="main">Happy New Year!</h1>
 <p>New year resolutions!</p>
 <ul id ="resolutions">
@@ -21,10 +23,12 @@
     <li class ="second">Code more fluently</li>
     <li class ="third">Get ahead of the game</li>
 </ul>
+
 <br>
 <br>
+
 </div>
-<h1>Example Page</h1>
+<h1>Exercise Examples</h1>
 <div class="important">
     <h3>NOTICE</h3>
     <p>This is an important message!</p>
@@ -37,19 +41,41 @@
 </div>
 <p class="important">This is also an important message.</p>
 
+<br>
+<br>
+
+<h1>New Hobbies</h1>
+<ul id="list">
+    <li class="codeup">1.) Read more books</li>
+    <li class="codeup">2.) Listen to more podcasts</li>
+    <li class="codeup">3.) Exercise consistently</li>
+</ul>
 
 
-<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+
+
 <script>
+
+    //-------MANIPULATING SELECTORS--------//
+
+
     //Add some js that uses jQuery to set an alert that'll tell you the contents of the h1 element.//
     var contents = $('#main').html() + (' (This is alerting the inner html of the h1)'); //create a variable that will grab the .html of the h1 element.//
     alert(contents); //now set an alert to the var contents to receive your result.
+
 
     //Add some jQuery to select all important classes and use .css to change the background color to yellow.//
     //  $('.important').css('background-color', 'yellow');
 
      //make your paragraph elements font larger//
     $('p').css('font-size', '14px');
+
+    //make li elements font size 20px//
+    $('li').css('font-size', '20px');
+
+    //highlight h1, p, and li elements//
+    $('h1, p, li').css('background-color', '#245B5C');
+
 
     //Using multiple selectors//
     $('.important, p').css('background-color', '#663D34');
@@ -58,22 +84,8 @@
     // to put a border around every element to help see the layout.//
     $('*').css('border', '1px solid #24475C');
 
-
-    $('#main').click(function () {
-        $(this).css('background-color', '#FF0');
-    });
-
-    $('p').dblclick(function() {
-        $(this).css('font-size', '18px');
-    });
-
-    $('li')
-        .mouseenter(function() {
-            $('li').css('color', 'blue');
-        })
-        .mouseout(function() {
-            $('li').css('color', 'black');
-        });
+    //create a border of 1px and black around all elements named codeup//
+    $('.codeup').css('border', '1px solid yellow');
 
     // this window.onload function waits until images have fully downloaded
     // to begin manipulating DOM objects. But you usually don't need to wait
@@ -91,6 +103,50 @@
     $(document).ready(function(){
         alert('The DOM is finished loading!');
     })
+
+
+    //---------ADDING MOUSE EVENT LISTENERS-------//
+
+
+    //when the class codeup is clicked you will get an alert//
+    $('.codeup').click(function() {
+        alert('the class "codeup" was clicked');
+    });
+
+    //change the background color to #FF0 when clicking the id main//
+    $('#main').click(function () {
+        $(this).css('background-color', '#FF0'); //this will happen first//
+        alert('h1 with the id "main" was clicked'); //this will happen next//
+    });
+
+    //change the font size when double clicking the paragraph element//
+    $('p').dblclick(function() {
+        $(this).css('font-size', '18px');
+        alert('the paragraph element was double clicked.');
+    });
+
+    //change the li color to blue when mouseenter and mouse out//
+    $('li')
+        .mouseenter(function() {
+            $('li').css('color', 'blue');
+        })
+        .mouseout(function() {
+            $('li').css('color', 'black');
+        });
+
+    //slightly different output of hover//
+    // $('li').hover(
+    //     function() {
+    //         $(this).css('background-color', 'blue');
+    //     },
+    //     function() {
+    //         $(this).css('background-color', 'black');
+    //     }
+    // );
+
+
+
+
 
 </script>
 </body>
