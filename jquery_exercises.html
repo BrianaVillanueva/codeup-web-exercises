@@ -21,7 +21,9 @@
     <li class ="second">Code more fluently</li>
     <li class ="third">Get ahead of the game</li>
 </ul>
-
+<br>
+<br>
+</div>
 <h1>Example Page</h1>
 <div class="important">
     <h3>NOTICE</h3>
@@ -42,6 +44,10 @@
     //Add some js that uses jQuery to set an alert that'll tell you the contents of the h1 element.//
     var contents = $('#main').html() + (' (This is alerting the inner html of the h1)'); //create a variable that will grab the .html of the h1 element.//
     alert(contents); //now set an alert to the var contents to receive your result.
+
+    //Add some jQuery to select all important classes and use .css to change the background color to yellow.//
+     $('.important').css('background-color', 'yellow');
+
 
     $('#main').click(function () {
         $(this).css('background-color', '#FF0');
