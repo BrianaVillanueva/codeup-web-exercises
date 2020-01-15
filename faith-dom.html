@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="page">
+    <h2 onclick = "this.innerHTML = 'OOpps'">Click on this text!</h2>
+    <hl id="header">List</hl>
+    <h2>Buy groceries</h2>
+    <ul id = "myList">
+        <li id="one" class="hot"><em>fresh</em>figs</li>
+        <li id="two" class="hot">pine nuts</li>
+        <li id="three" class="hot">honey</li>
+        <li id="four">balsamic vinegar</li>
+    </ul>
+    <input type="button" onclick="chBackcolor('red');">
+    <button id="btn" type="button">Try it</button>
+    <button onclick="myFunction()">Add to list</button>
+    <input onclick="change()" type="button" value="Open Curtain" id="myButton1">
+</div>
+<script>
+    function chBackcolor(color) {
+        document.body.style.background = color;
+    }
+    document.getElementById('btn').onclick = function() {
+        document.getElementById('three').innerHTML = 'Hey There';
+    }
+    function change() {
+        document.getElementById("myButton1").value = "Close Curtain";
+    }
+    var element = document.getElementById("four");
+    element.innerHTML = "New Heading";
+    function myFunction() {
+        var node = document.createElement("li");
+        var textnode = document.createTextNode("Water");
+        node.appendChild(textnode);
+        document.getElementById("myList").appendChild(node);
+    }
