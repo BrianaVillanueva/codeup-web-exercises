@@ -59,6 +59,10 @@
     <input type="text" id="textfield" name="textfield" placeholder="Type Here"/>
 </form>
 
+<br>
+<br>
+
+<h2 id="hello">Hello Codeup!</h2>
 
 
 <script>
@@ -191,6 +195,18 @@
 
 
 
+    //-----ATTRIBUTE METHODS----//
+
+    //assign contents of the h2 element to a var and alert it//
+    var h2Contents = $('#hello').html();
+    alert(h2Contents);
+
+
+    //wrapping this in a click event//
+    $('#hello').click(function() {
+        alert($(this).html());
+    });
+    console.log(h2Contents)
 
 
 
