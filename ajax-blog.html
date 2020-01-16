@@ -8,32 +8,41 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="css/blog.css">
     <title>Ajax Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+
 </head>
+
 <body>
-<div class="jumbotron">
-    <h1 class="display-4">Hello, world!</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-    <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+
+<!---JUMBOTRON--->
+<div id="blogPage"></div>
+<div id="pinkPage">
+    <div class="container ">
+        <nav class="navbar navbar-light bg-dark">
+            <a class="navbar-brand"><i class="fas fa-crown"></i>Thy Blog</a>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="@handle" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search Bloggers</button>
+            </form>
+        </nav>
+        <div class="jumbotron customJumbotron">
+            <h1 class="display-4"></h1>
+        </div>
+    <div id="post"></div>
 </div>
-<div id="post"></div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-
-
-
+<!---POST CONTENT--->
 <script>
     (function() {
         "use strict";
         $(document).ready(function () {
-            // TODO: Create an ajax GET request for /data/inventory.json
-
-            // TODO: Take the data from inventory.json and append it to the products table
-            //       HINT: Your data should come back as a JSON object; use console.log() to inspect
-            //             its contents and fields
-            //       HINT: You will want to target #insertProducts for your new HTML elements
 
             var posts = $.get("data/blog.json")
                 .done(function(posts) {
@@ -42,20 +51,45 @@
 
                     function blogData(i) {
                         return (
-                            '<h1>' + posts [i].title +
-                            '</h1><p>' + posts [i].content +
-                            '</p><p>' + posts [i].categories +
-                            '</p><p>' + posts [i].date +
-                            '</p>')
+                            '<h1 class="postsTitle">' + posts[i].title +
+                            '</h1></p><p>' + posts [i].date +
+                            '</p><p class="textContent">' + posts[i].content +
+                            '</p><img class="burger-image" src=' + posts[i].burger + '>' +
+                            '<img class="fruit-image" src=' + posts[i].fruit +'>'
+                        );
                     }
 
 
-                })
+                });
+
+            //---KONAMI---//
+            var userInput = "";
+            var konami = "3838404037393739666513";
+            // var konami = "ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightbaEnter"; //use this with event.key instead of .which
+            function reset() {
+                userInput = "";
+            }
+            $(document).keyup(function (event) {
+                // console.log(event.which);
+                userInput += (event.which);
+                console.log(event.which);
+                console.log(userInput);
+                console.log(konami);
+                if (userInput === konami) {
+                    reset();
+                    $('#blogPage').toggleClass('meme')
+                    $('#pinkPage').toggleClass('random')
+                }
+            });
+
+
 
         });
 
 
     })();
+
 </script>
+</div>
 </body>
 </html>

@@ -1,3 +1,52 @@
-.jumbotron {
-    background-image: url("");
+.customJumbotron {
+    background-image: url("../Images/guac_Fotor.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    border-radius: 100%;
+}
+.container {
+    background-color: #800000;
+    background-position: center;
+
+}
+#pinkPage {
+    background-image: url("../Images/pexels-photo.jpeg");
+
+}
+#blogPage {
+    background-image: url("../Images/coding-meme.JPEG");
+
+}
+.postsTitle {
+    font-family: 'Parisienne', cursive;
+    color: #d2a9a9;
+}
+.textContent {
+    color: #d2a9a9;
+}
+.meme {
+    background-image: url("../Images/meme.jpg");
+    height: 800px;
+    width: 1200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#post {
+    background-position: center;
+}
+.burger-image {
+    background-position: center;
+    border-radius: 20%;
+}
+.fruit-image {
+    background-position: center;
+    border-radius: 20%;
+}
+.random {
+    display: none;
+}
+.navbar-brand {
+    font-family: 'Courgette', cursive;
+    color: #d2a9a9;
 }
