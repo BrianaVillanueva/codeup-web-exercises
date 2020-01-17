@@ -117,3 +117,42 @@ for (let hamster of hamsters) {
 
 console.log(totalHamsterHeight); //to get an average add "/ hamsters.length" after totalHamsterHeight
 console.log(hamsterStack);
+
+
+
+//-----6.)reduce -----//
+const salesPeople = [
+    {name: 'Kim Halpert', sales: 100}, //first time through
+    {name: 'Dwight Schrute', sales: 50}, //second time through
+    {name: 'Andy Bernard', sales:150}, //third time through
+];
+
+const totalSales = salesPeople.reduce((total, person) =>{
+    return total + person.sales;
+}, 200);
+console.log(totalSales);
+
+
+
+//-----7.)take a sentence and count the number of acurrances for each word in a sentencce-----//
+
+
+function countWords(sentence, counts = {}) {
+    const words = sentence.split(' '); // transform a sentence into an array of words
+    const wordCountObject = words.reduce((wordCounts, word) => {
+        if (typeof wordCounts[word] === 'undefined') { //if we havent counted this word yet, not added to list yet
+            // if the word is not yet present in our object, set it's value to 1
+            wordCounts[word] = 1;
+        } else {
+            // otherwise increment the existing count
+            wordCounts[word] += 1; //if we have seen that word before, we increment it
+        }
+        return wordCounts;
+    }, counts); // start with an empty object
+    return wordCountObject;
+}
+
+let wordCounts = countWords('Mary had a little lamb little lamb little lamb');
+console.log(countWords("the little monkey had a banana"));
+
+// {Mary: 1, had: 1, a: 1, little: 3, lamb: 3}
