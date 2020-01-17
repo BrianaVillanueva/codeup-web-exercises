@@ -123,7 +123,7 @@ console.log(reindeerNames);
 
 
 
-//-----3.) how to get all the fur colors together// this will be a map in a map, not just include in a result but push into a waiting zone. breaking down functional programming-----//
+//-----3.) how to get all the fur colors together// this will be a MAP in a map, not just include in a result but push into a waiting zone. breaking down functional programming-----//
 let furColors = [];
 hamsters.map(hamster => {
     hamster.fur.map(color =>furColors.push(color) );
@@ -132,11 +132,11 @@ hamsters.map(hamster => {
 console.log(furColors);
 
 //-----4.) the function we pass in will return true or false. get golden ones//using FILTER to see to leave it in or toss out-----//
-let goldReindeer = reindeer.filter(deer => deer.isGold); //is deer.isGold is true, will return
+let goldReindeer = reindeer.filter(deer => deer.isGold); //if deer.isGold is true, will return
 
 console.log(goldReindeer);
 
-//-----5.) reduce average height of hamsters-----// reduce is just a restructure from old ways
+//-----5.) REDUCE average height of hamsters-----// reduce is just a restructure from old ways
 let totalHamsterHeight = hamsters.reduce((hamsterStack, hamster) => {  //need to pass in more than one thing, one function, function is going to receive more than one item. also pass in a where the accumulation should start
     return hamsterStack + hamster.heightInMM; //this is growing as we go. each time we are adding hamsters height to hamster stack.
 }, 0);
