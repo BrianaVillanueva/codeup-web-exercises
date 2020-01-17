@@ -7,29 +7,63 @@ let reindeer = [
         isGold: false
     },{
         name: "Dasher",
-        age: 16,
-        isGold: false
+        age: 8,
+        isGold: true
     },{
         name: "Patch",
-        age: 5,
+        age: 2,
         isGold: false
     },{
         name: "Rocket",
-        age: 5,
+        age: 6,
         isGold: false
     },{
-        name: "Rocket",
+        name: "Dancer",
+        age: 9,
+        isGold: true
+    },{
+        name: "Prancer",
         age: 5,
+        isGold: true
+    },{
+        name: "Groot",
+        age: 9,
         isGold: false
     },{
-        name: "Rocket",
-        age: 5,
-        isGold: false
-    },{
-        name: "Rocket",
-        age: 5,
+        name: "Vixen",
+        age: 9,
+        isGold: true
+    },
+    {
+        name: "Comet",
+        age: 11,
+        isGold: true
+    },
+    {
+        name: "Archie",
+        age: 3,
         isGold: false
     },
+    {
+        name: "Cupid",
+        age: 13,
+        isGold: true
+    },
+    {
+        name: "Donder",
+        age: 16,
+        isGold: true
+    },
+    {
+        name: "Boots",
+        age: 16,
+        isGold: false
+    },
+    {
+        name: "Blizten",
+        age: 16,
+        isGold: true
+    }
 ];
 
 
@@ -127,7 +161,7 @@ const salesPeople = [
     {name: 'Andy Bernard', sales:150}, //third time through
 ];
 
-const totalSales = salesPeople.reduce((total, person) =>{
+const totalSales = salesPeople.reduce((total, person) => {
     return total + person.sales;
 }, 200);
 console.log(totalSales);
@@ -153,6 +187,6 @@ function countWords(sentence, counts = {}) {
 }
 
 let wordCounts = countWords('Mary had a little lamb little lamb little lamb');
-console.log(countWords("the little monkey had a banana"));
+console.log(countWords("the little monkey had a banana", wordCounts));
 
 // {Mary: 1, had: 1, a: 1, little: 3, lamb: 3}
